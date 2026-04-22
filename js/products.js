@@ -1,4 +1,3 @@
-/* ANNOSEMP - Products Database */
 const products = [
     {
         id: 1,
@@ -9,7 +8,7 @@ const products = [
         oldPrice: null,
         badge: { ru: 'Бестселлер', en: 'Bestseller' },
         images: [
-            'https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80',
+            'assets/products/modular-parka-black.jpg',
         ],
         sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
         colors: [
@@ -35,7 +34,7 @@ const products = [
         oldPrice: null,
         badge: { ru: 'Новинка', en: 'New' },
         images: [
-            'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80',
+            'assets/products/core-shell-jacket.jpg',
         ],
         sizes: ['S', 'M', 'L', 'XL'],
         colors: [
@@ -61,7 +60,7 @@ const products = [
         oldPrice: 15900,
         badge: { ru: '-19%', en: '-19%' },
         images: [
-            'https://images.unsplash.com/photo-1608063615781-e2ef8c73d114?w=800&q=80',
+            'assets/products/thermal-liner-module.jpg',
         ],
         sizes: ['S', 'M', 'L', 'XL'],
         colors: [
@@ -86,7 +85,7 @@ const products = [
         oldPrice: null,
         badge: { ru: 'Технология', en: 'Tech' },
         images: [
-            'https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=800&q=80',
+            'assets/products/heat-core-module.jpg',
         ],
         sizes: ['Universal'],
         colors: [
@@ -111,7 +110,7 @@ const products = [
         oldPrice: null,
         badge: null,
         images: [
-            'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
+            'assets/products/led-panel-module.jpg',
         ],
         sizes: ['Universal'],
         colors: [
@@ -137,7 +136,7 @@ const products = [
         oldPrice: 34900,
         badge: { ru: '-17%', en: '-17%' },
         images: [
-            'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80',
+            'assets/products/urban-tech-bomber.jpg',
         ],
         sizes: ['XS', 'S', 'M', 'L', 'XL'],
         colors: [

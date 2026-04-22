@@ -11,15 +11,12 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
 </head>
 <body>
-    <!-- Loader -->
     <div class="loader">
         <div class="loader__brand">Annosemp</div>
     </div>
 
-    <!-- Page Transition -->
     <div class="page-transition"></div>
 
-    <!-- Header -->
     <header class="header" id="header">
         <div class="header__inner">
             <a href="index.html" class="header__logo">Annosemp<span>.</span></a>
@@ -38,7 +35,6 @@
                 <div class="header__cart" id="cart-toggle">
                     <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
                     <span class="header__cart-count" id="cart-count">0</span>
-                    <!-- Mini Cart -->
                     <div class="mini-cart" id="mini-cart">
                         <div class="mini-cart__header">
                             <span class="mini-cart__title" data-i18n="cart.miniTitle">Корзина</span>
@@ -62,7 +58,6 @@
         </div>
     </header>
 
-    <!-- Mobile Nav -->
     <nav class="mobile-nav" id="mobile-nav">
         <a href="index.html" data-i18n="nav.home">Главная</a>
         <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
@@ -75,10 +70,9 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero__bg">
-            <img src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=1600&q=80" alt="Annosemp Hero">
+            <img src="assets/pages/hero-main.jpg" alt="Annosemp Hero">
         </div>
         <div class="hero__overlay"></div>
         <div class="hero__content">
@@ -96,7 +90,6 @@
         </div>
     </section>
 
-    <!-- Marquee -->
     <div class="marquee">
         <div class="marquee__track">
             <span class="marquee__item">Modularity<span>◆</span></span>
@@ -112,7 +105,6 @@
         </div>
     </div>
 
-    <!-- Philosophy Section -->
     <section class="section" id="philosophy">
         <div class="container container--content">
             <div class="grid-2" style="align-items:center;gap:var(--space-4xl);">
@@ -132,7 +124,6 @@
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="section section--dark" id="features">
         <div class="container container--content">
             <div class="text-center" style="margin-bottom:var(--space-4xl);">
@@ -172,7 +163,6 @@
         </div>
     </section>
 
-    <!-- Featured Collection -->
     <section class="section" id="collection">
         <div class="container container--content">
             <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:var(--space-3xl);">
@@ -183,12 +173,10 @@
                 <a href="catalog.html" class="btn btn--outline btn--sm reveal" data-i18n="collection.cta">Смотреть все</a>
             </div>
             <div class="grid-4" id="featured-products">
-                <!-- Rendered by JS -->
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="section section--dark" style="position:relative;overflow:hidden;">
         <div class="container container--content text-center" style="position:relative;z-index:2;">
             <span class="section-subtitle reveal" data-i18n="cta.subtitle">Предзаказ</span>
@@ -200,7 +188,6 @@
         <div style="position:absolute;top:50%;left:50%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(201,169,110,0.06) 0%,transparent 70%);transform:translate(-50%,-50%);pointer-events:none;"></div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer" id="footer">
         <div class="container container--content">
             <div class="footer__grid">
@@ -246,7 +233,6 @@
         </div>
     </footer>
 
-    <!-- Toast -->
     <div class="toast" id="toast"></div>
 
     <script src="js/translations.js"></script>

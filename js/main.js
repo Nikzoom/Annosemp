@@ -34,7 +34,7 @@ function initHeader() {
         ticking = false;
     };
 
-    // RAF-throttle: предотвращает лишние перерасчёты стилей при скролле
+    // Keep scroll updates inside RAF.
     window.addEventListener('scroll', () => {
         lastScrollY = window.scrollY;
         if (!ticking) {
@@ -105,13 +105,12 @@ function initRevealAnimations() {
     }
 
     const observer = new IntersectionObserver((entries) => {
-        // Батчим DOM-операции через RAF, чтобы избежать layout thrashing
+        // Apply reveal classes in one paint cycle.
         requestAnimationFrame(() => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('revealed');
                     observer.unobserve(entry.target);
-                    // Освобождаем GPU-память после завершения анимации
                     setTimeout(() => {
                         entry.target.style.willChange = 'auto';
                     }, 700);
@@ -128,7 +127,6 @@ function initRevealAnimations() {
 
 function initImageLazyLoad() {
     const images = document.querySelectorAll('img[loading="lazy"]');
-    // Если браузер поддерживает нативный lazy load — ничего не делаем
     if ('loading' in HTMLImageElement.prototype) return;
 
     const imgObserver = new IntersectionObserver((entries) => {
@@ -168,7 +166,7 @@ function renderFeaturedProducts() {
     if (!container) return;
 
     const featured = getFeaturedProducts();
-    // DocumentFragment: батчевая вставка без reflow на каждую карточку
+    // Build cards off-DOM first.
     const fragment = document.createDocumentFragment();
     const temp = document.createElement('div');
     temp.innerHTML = featured.map(product => createProductCard(product)).join('');
