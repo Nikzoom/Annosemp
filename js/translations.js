@@ -1,0 +1,121 @@
+/* ANNOSEMP — Translations RU/EN */
+const translations = {
+    // Header Nav
+    'nav.home': { ru: 'Главная', en: 'Home' },
+    'nav.catalog': { ru: 'Каталог', en: 'Catalog' },
+    'nav.about': { ru: 'О бренде', en: 'About' },
+    'nav.technology': { ru: 'Технологии', en: 'Technology' },
+    'nav.contact': { ru: 'Контакты', en: 'Contact' },
+
+    // Hero
+    'hero.label': { ru: 'Модульная одежда будущего', en: 'Modular Clothing of the Future' },
+    'hero.title': { ru: 'Annosemp.', en: 'Annosemp.' },
+    'hero.subtitle': { ru: 'Диалог между мгновением и вечностью. Вечная классика, переплетающаяся с ритмом жизни.', en: 'A dialogue between the moment and eternity. Timeless classics intertwined with the rhythm of life.' },
+    'hero.cta': { ru: 'Смотреть коллекцию', en: 'View Collection' },
+    'hero.cta2': { ru: 'О бренде', en: 'About Us' },
+    'hero.scroll': { ru: 'Листайте вниз', en: 'Scroll Down' },
+
+    // Philosophy
+    'philosophy.subtitle': { ru: 'Философия', en: 'Philosophy' },
+    'philosophy.title': { ru: 'ANNO + SEMP', en: 'ANNO + SEMP' },
+    'philosophy.anno': { ru: 'ANNO (год) — олицетворяет время, циклы, моменты, историю.', en: 'ANNO (year) — embodies time, cycles, moments, history.' },
+    'philosophy.semp': { ru: 'SEMP (всегда) — олицетворяет постоянство, вечность, неизменность, наследие.', en: 'SEMP (always) — embodies constancy, eternity, immutability, heritage.' },
+    'philosophy.quote': { ru: '«Annosemp — это диалог между мгновением и вечностью. Между тем, что меняется, и тем, что остаётся неизменным.»', en: '"Annosemp is a dialogue between the moment and eternity. Between what changes and what remains unchanged."' },
+
+    // Features
+    'features.subtitle': { ru: 'Преимущества', en: 'Advantages' },
+    'features.title': { ru: 'Технологии в каждой детали', en: 'Technology in Every Detail' },
+    'features.modular.title': { ru: 'Модульность 3-в-1', en: '3-in-1 Modularity' },
+    'features.modular.text': { ru: 'Одна куртка заменяет демисезонную, зимнюю и ветровку. Сменные модули для любой погоды.', en: 'One jacket replaces a demi-season, winter, and windbreaker. Interchangeable modules for any weather.' },
+    'features.heat.title': { ru: 'Подогрев спины', en: 'Back Heating' },
+    'features.heat.text': { ru: 'Программируемый подогрев спины с автономной работой до 8 часов. Комфорт в любых условиях.', en: 'Programmable back heating with up to 8 hours of autonomous operation. Comfort in any conditions.' },
+    'features.led.title': { ru: 'LED-подсветка', en: 'LED Lighting' },
+    'features.led.text': { ru: 'Программируемая светодиодная подсветка для безопасности и стиля в тёмное время суток.', en: 'Programmable LED lighting for safety and style after dark.' },
+    'features.eco.title': { ru: 'Экологичность', en: 'Sustainability' },
+    'features.eco.text': { ru: 'Модульность продлевает жизненный цикл изделия, снижая экологическую нагрузку.', en: 'Modularity extends product lifecycle, reducing environmental impact.' },
+
+    // Collection
+    'collection.subtitle': { ru: 'Коллекция', en: 'Collection' },
+    'collection.title': { ru: 'Избранное', en: 'Featured' },
+    'collection.cta': { ru: 'Смотреть все', en: 'View All' },
+    'collection.quick': { ru: 'Быстрый просмотр', en: 'Quick View' },
+
+    // CTA Section
+    'cta.subtitle': { ru: 'Предзаказ', en: 'Pre-order' },
+    'cta.title': { ru: 'Будьте первыми', en: 'Be the First' },
+    'cta.text': { ru: 'Запуск пилотной партии — июнь 2026. Оформите предзаказ и получите персональную скидку.', en: 'Pilot batch launch — June 2026. Pre-order now and get a personal discount.' },
+    'cta.btn': { ru: 'Оформить предзаказ', en: 'Pre-order Now' },
+
+    // Footer
+    'footer.desc': { ru: 'Вечная классика, переплетающаяся с ритмом нашей жизни. Модульная одежда нового поколения.', en: 'Timeless classics intertwined with the rhythm of our lives. Next-generation modular clothing.' },
+    'footer.nav': { ru: 'Навигация', en: 'Navigation' },
+    'footer.info': { ru: 'Информация', en: 'Information' },
+    'footer.info.delivery': { ru: 'Доставка', en: 'Delivery' },
+    'footer.info.returns': { ru: 'Возврат', en: 'Returns' },
+    'footer.info.privacy': { ru: 'Конфиденциальность', en: 'Privacy' },
+    'footer.info.terms': { ru: 'Условия', en: 'Terms' },
+    'footer.newsletter': { ru: 'Рассылка', en: 'Newsletter' },
+    'footer.newsletter.text': { ru: 'Подпишитесь на новости о запуске коллекции.', en: 'Subscribe for collection launch updates.' },
+    'footer.newsletter.placeholder': { ru: 'Ваш email', en: 'Your email' },
+    'footer.copy': { ru: '© 2026 Annosemp. Все права защищены.', en: '© 2026 Annosemp. All rights reserved.' },
+
+    // Catalog page
+    'catalog.title': { ru: 'Каталог', en: 'Catalog' },
+    'catalog.all': { ru: 'Все', en: 'All' },
+    'catalog.jackets': { ru: 'Куртки', en: 'Jackets' },
+    'catalog.modules': { ru: 'Модули', en: 'Modules' },
+    'catalog.accessories': { ru: 'Аксессуары', en: 'Accessories' },
+    'catalog.sort': { ru: 'Сортировка', en: 'Sort' },
+    'catalog.sort.new': { ru: 'Новинки', en: 'New Arrivals' },
+    'catalog.sort.price_asc': { ru: 'Цена ↑', en: 'Price ↑' },
+    'catalog.sort.price_desc': { ru: 'Цена ↓', en: 'Price ↓' },
+
+    // Product page
+    'product.addToCart': { ru: 'Добавить в корзину', en: 'Add to Cart' },
+    'product.size': { ru: 'Размер', en: 'Size' },
+    'product.color': { ru: 'Цвет', en: 'Color' },
+    'product.description': { ru: 'Описание', en: 'Description' },
+    'product.specs': { ru: 'Характеристики', en: 'Specifications' },
+    'product.related': { ru: 'Вам может понравиться', en: 'You May Also Like' },
+    'product.added': { ru: 'Добавлено в корзину', en: 'Added to cart' },
+    'product.notFound': { ru: 'Товар не найден', en: 'Product not found' },
+
+    // Cart
+    'cart.title': { ru: 'Корзина', en: 'Cart' },
+    'cart.empty': { ru: 'Ваша корзина пуста', en: 'Your cart is empty' },
+    'cart.continue': { ru: 'Продолжить покупки', en: 'Continue Shopping' },
+    'cart.product': { ru: 'Товар', en: 'Product' },
+    'cart.price': { ru: 'Цена', en: 'Price' },
+    'cart.quantity': { ru: 'Количество', en: 'Quantity' },
+    'cart.total': { ru: 'Итого', en: 'Total' },
+    'cart.subtotal': { ru: 'Подитог', en: 'Subtotal' },
+    'cart.shipping': { ru: 'Доставка', en: 'Shipping' },
+    'cart.shipping.free': { ru: 'Бесплатно', en: 'Free' },
+    'cart.checkout': { ru: 'Оформить заказ', en: 'Checkout' },
+    'cart.remove': { ru: 'Удалить', en: 'Remove' },
+    'cart.summary': { ru: 'Сумма заказа', en: 'Order Summary' },
+    'cart.miniTitle': { ru: 'Корзина', en: 'Cart' },
+
+    // About
+    'about.subtitle': { ru: 'О бренде', en: 'About' },
+    'about.title': { ru: 'Annosemp', en: 'Annosemp' },
+    'about.mission.title': { ru: 'Наша миссия', en: 'Our Mission' },
+    'about.mission.text': { ru: 'Обеспечить разработку и внедрение модульной системы умной одежды, направленной на повышение функциональности, комфорта и доступности повседневной одежды за счёт интеграции современных технологий, а также снижение экологической нагрузки посредством продления жизненного цикла изделий.', en: 'To develop and implement a modular smart clothing system aimed at enhancing functionality, comfort and accessibility of everyday wear through the integration of modern technologies, while reducing environmental impact by extending product lifecycle.' },
+    'about.vision.title': { ru: 'Наше видение', en: 'Our Vision' },
+    'about.vision.text': { ru: 'Сформировать устойчивую позицию на рынке инновационной одежды, став одним из лидеров в сегменте модульных технологических решений, обеспечивающих персонализацию, энергоэффективность и адаптивность продукции.', en: 'To establish a sustainable position in the innovative clothing market, becoming a leader in modular technological solutions that ensure personalization, energy efficiency, and product adaptability.' },
+
+    // Contact
+    'contact.subtitle': { ru: 'Контакты', en: 'Contact' },
+    'contact.title': { ru: 'Свяжитесь с нами', en: 'Get in Touch' },
+    'contact.name': { ru: 'Имя', en: 'Name' },
+    'contact.email': { ru: 'Email', en: 'Email' },
+    'contact.message': { ru: 'Сообщение', en: 'Message' },
+    'contact.send': { ru: 'Отправить', en: 'Send' },
+    'contact.address': { ru: 'Адрес', en: 'Address' },
+    'contact.phone': { ru: 'Телефон', en: 'Phone' },
+};
+
+function t(key) {
+    const lang = localStorage.getItem('annosemp-lang') || 'ru';
+    return translations[key] ? (translations[key][lang] || translations[key]['ru']) : key;
+}
