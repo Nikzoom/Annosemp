@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог модульной одежды Annosemp. Куртки, модули, аксессуары.">
+    <title>Каталог — Annosemp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+    <div class="page-transition"></div>
+
+    <!-- Header -->
+    <header class="header scrolled" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">Annosemp<span>.</span></a>
+            <nav class="header__nav">
+                <a href="index.html" data-i18n="nav.home">Главная</a>
+                <a href="catalog.html" class="active" data-i18n="nav.catalog">Каталог</a>
+                <a href="about.html" data-i18n="nav.about">О бренде</a>
+                <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+            </nav>
+            <div class="header__actions">
+                <div class="lang-switch">
+                    <button class="lang-switch__btn active" data-lang="ru">RU</button>
+                    <span class="lang-switch__divider">/</span>
+                    <button class="lang-switch__btn" data-lang="en">EN</button>
+                </div>
+                <div class="header__cart" id="cart-toggle">
+                    <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+                    <span class="header__cart-count" id="cart-count">0</span>
+                    <div class="mini-cart" id="mini-cart">
+                        <div class="mini-cart__header">
+                            <span class="mini-cart__title" data-i18n="cart.miniTitle">Корзина</span>
+                            <a href="cart.html" class="text-gold" style="font-size:var(--fs-xs);">→</a>
+                        </div>
+                        <div class="mini-cart__items" id="mini-cart-items"></div>
+                        <div class="mini-cart__empty" id="mini-cart-empty" data-i18n="cart.empty">Ваша корзина пуста</div>
+                        <div class="mini-cart__footer" id="mini-cart-footer" style="display:none;">
+                            <div class="mini-cart__total"><span data-i18n="cart.total">Итого</span><span id="mini-cart-total">0 ₽</span></div>
+                            <a href="cart.html" class="btn btn--primary btn--full btn--sm" data-i18n="cart.checkout">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger" id="burger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+        <a href="about.html" data-i18n="nav.about">О бренде</a>
+        <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+    </nav>
+
+    <!-- Catalog Page -->
+    <main class="page-content">
+        <div class="container container--content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-header__title" data-i18n="catalog.title">Каталог</h1>
+            </div>
+
+            <!-- Filters Bar -->
+            <div class="catalog-bar">
+                <div class="catalog-filters">
+                    <button class="catalog-filter__btn active" data-category="all" data-i18n="catalog.all">Все</button>
+                    <button class="catalog-filter__btn" data-category="jackets" data-i18n="catalog.jackets">Куртки</button>
+                    <button class="catalog-filter__btn" data-category="modules" data-i18n="catalog.modules">Модули</button>
+                    <button class="catalog-filter__btn" data-category="accessories" data-i18n="catalog.accessories">Аксессуары</button>
+                </div>
+                <div class="catalog-sort">
+                    <select id="catalog-sort">
+                        <option value="new">Новинки</option>
+                        <option value="price_asc">Цена ↑</option>
+                        <option value="price_desc">Цена ↓</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid-3" id="catalog-grid" style="margin-bottom:var(--space-5xl);">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container container--content">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand">Annosemp<span style="color:var(--gold);">.</span></div>
+                    <p class="footer__desc" data-i18n="footer.desc">Вечная классика, переплетающаяся с ритмом нашей жизни.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading" data-i18n="footer.nav">Навигация</h4>
+                    <div class="footer__links">
+                        <a href="index.html" data-i18n="nav.home">Главная</a>
+                        <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+                        <a href="about.html" data-i18n="nav.about">О бренде</a>
+                        <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__heading" data-i18n="footer.info">Информация</h4>
+                    <div class="footer__links">
+                        <a href="#" data-i18n="footer.info.delivery">Доставка</a>
+                        <a href="#" data-i18n="footer.info.returns">Возврат</a>
+                        <a href="#" data-i18n="footer.info.privacy">Конфиденциальность</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__heading" data-i18n="footer.newsletter">Рассылка</h4>
+                    <p class="footer__desc" style="margin-bottom:var(--space-md);" data-i18n="footer.newsletter.text">Подпишитесь на новости.</p>
+                    <div class="footer__newsletter-input">
+                        <input type="email" placeholder="Ваш email" data-i18n="footer.newsletter.placeholder">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copy" data-i18n="footer.copy">© 2026 Annosemp. Все права защищены.</span>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.198 2.433a2.242 2.242 0 00-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 01-2.849 1.09c-.42.147-.99.332-1.473.901-.728.855.075 1.644.357 1.882l4.146 2.987.283 4.59c.063.497.264.94.69 1.12.426.179.81.03 1.09-.151l2.479-1.59 3.397 2.686c.39.282.81.424 1.254.424.54 0 .943-.285 1.176-.57.233-.285.381-.632.453-.995 0-.002 3.478-16.476 3.478-16.476.187-.727.137-1.373-.19-1.873-.33-.502-.844-.733-1.136-.804z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/translations.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

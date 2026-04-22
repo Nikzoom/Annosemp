@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Корзина — Annosemp">
+    <title>Корзина — Annosemp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+    <div class="page-transition"></div>
+
+    <header class="header scrolled" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">Annosemp<span>.</span></a>
+            <nav class="header__nav">
+                <a href="index.html" data-i18n="nav.home">Главная</a>
+                <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+                <a href="about.html" data-i18n="nav.about">О бренде</a>
+                <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+            </nav>
+            <div class="header__actions">
+                <div class="lang-switch">
+                    <button class="lang-switch__btn active" data-lang="ru">RU</button>
+                    <span class="lang-switch__divider">/</span>
+                    <button class="lang-switch__btn" data-lang="en">EN</button>
+                </div>
+                <div class="header__cart" id="cart-toggle">
+                    <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+                    <span class="header__cart-count" id="cart-count">0</span>
+                </div>
+                <div class="burger" id="burger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+        <a href="about.html" data-i18n="nav.about">О бренде</a>
+        <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+    </nav>
+
+    <main class="page-content">
+        <div class="container container--content">
+            <div class="page-header">
+                <h1 class="page-header__title" data-i18n="cart.title">Корзина</h1>
+            </div>
+
+            <!-- Empty State -->
+            <div class="cart-empty-state" id="cart-empty" style="display:none;">
+                <div class="cart-empty-state__icon">
+                    <svg viewBox="0 0 24 24" width="64" height="64" stroke="#ccc" stroke-width="1" fill="none"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+                </div>
+                <p data-i18n="cart.empty">Ваша корзина пуста</p>
+                <a href="catalog.html" class="btn btn--primary" data-i18n="cart.continue">Продолжить покупки</a>
+            </div>
+
+            <!-- Filled Cart -->
+            <div class="cart-layout" id="cart-filled" style="display:none;">
+                <!-- Cart Items -->
+                <div class="cart-items" id="cart-page-items">
+                    <!-- Rendered by JS -->
+                </div>
+
+                <!-- Order Summary -->
+                <div class="cart-summary">
+                    <h3 class="cart-summary__title" data-i18n="cart.summary">Сумма заказа</h3>
+                    <div class="cart-summary__row">
+                        <span data-i18n="cart.subtotal">Подитог</span>
+                        <span id="cart-summary-subtotal">0 ₽</span>
+                    </div>
+                    <div class="cart-summary__row">
+                        <span data-i18n="cart.shipping">Доставка</span>
+                        <span data-i18n="cart.shipping.free">Бесплатно</span>
+                    </div>
+                    <div class="cart-summary__divider"></div>
+                    <div class="cart-summary__row cart-summary__row--total">
+                        <span data-i18n="cart.total">Итого</span>
+                        <span id="cart-summary-total">0 ₽</span>
+                    </div>
+                    <button class="btn btn--primary btn--full btn--lg" data-i18n="cart.checkout" onclick="alert('Checkout coming soon!')">Оформить заказ</button>
+                    <a href="catalog.html" class="cart-summary__continue" data-i18n="cart.continue">← Продолжить покупки</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container container--content">
+            <div class="footer__bottom">
+                <span class="footer__copy" data-i18n="footer.copy">© 2026 Annosemp. Все права защищены.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/translations.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

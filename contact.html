@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свяжитесь с Annosemp — контакты и форма обратной связи">
+    <title>Контакты — Annosemp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+    <div class="page-transition"></div>
+
+    <header class="header scrolled" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">Annosemp<span>.</span></a>
+            <nav class="header__nav">
+                <a href="index.html" data-i18n="nav.home">Главная</a>
+                <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+                <a href="about.html" data-i18n="nav.about">О бренде</a>
+                <a href="contact.html" class="active" data-i18n="nav.contact">Контакты</a>
+            </nav>
+            <div class="header__actions">
+                <div class="lang-switch">
+                    <button class="lang-switch__btn active" data-lang="ru">RU</button>
+                    <span class="lang-switch__divider">/</span>
+                    <button class="lang-switch__btn" data-lang="en">EN</button>
+                </div>
+                <div class="header__cart" id="cart-toggle">
+                    <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+                    <span class="header__cart-count" id="cart-count">0</span>
+                    <div class="mini-cart" id="mini-cart">
+                        <div class="mini-cart__header">
+                            <span class="mini-cart__title" data-i18n="cart.miniTitle">Корзина</span>
+                            <a href="cart.html" class="text-gold" style="font-size:var(--fs-xs);">→</a>
+                        </div>
+                        <div class="mini-cart__items" id="mini-cart-items"></div>
+                        <div class="mini-cart__empty" id="mini-cart-empty" data-i18n="cart.empty">Ваша корзина пуста</div>
+                        <div class="mini-cart__footer" id="mini-cart-footer" style="display:none;">
+                            <div class="mini-cart__total"><span data-i18n="cart.total">Итого</span><span id="mini-cart-total">0 ₽</span></div>
+                            <a href="cart.html" class="btn btn--primary btn--full btn--sm" data-i18n="cart.checkout">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger" id="burger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+        <a href="about.html" data-i18n="nav.about">О бренде</a>
+        <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+    </nav>
+
+    <main class="page-content">
+        <div class="container container--content">
+            <div class="page-header">
+                <span class="section-subtitle" data-i18n="contact.subtitle">Контакты</span>
+                <h1 class="page-header__title" data-i18n="contact.title">Свяжитесь с нами</h1>
+            </div>
+
+            <div class="contact-grid grid-2" style="gap:var(--space-4xl);margin-bottom:var(--space-5xl);">
+                <!-- Contact Form -->
+                <div class="reveal">
+                    <form class="contact-form" id="contact-form" onsubmit="event.preventDefault();alert('Сообщение отправлено!');">
+                        <div class="form-group">
+                            <label class="form-label" data-i18n="contact.name">Имя</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" data-i18n="contact.email">Email</label>
+                            <input type="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" data-i18n="contact.message">Сообщение</label>
+                            <textarea class="form-textarea" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--lg" data-i18n="contact.send">Отправить</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="reveal reveal-delay-2">
+                    <div class="contact-info-block">
+                        <h4 class="contact-info-block__title" data-i18n="contact.email">Email</h4>
+                        <p class="contact-info-block__text">hello@annosemp.com</p>
+                    </div>
+                    <div class="contact-info-block">
+                        <h4 class="contact-info-block__title" data-i18n="contact.phone">Телефон</h4>
+                        <p class="contact-info-block__text">+7 (999) 123-45-67</p>
+                    </div>
+                    <div class="contact-info-block">
+                        <h4 class="contact-info-block__title" data-i18n="contact.address">Адрес</h4>
+                        <p class="contact-info-block__text">Россия, Москва</p>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#" class="contact-social">Telegram</a>
+                        <a href="#" class="contact-social">Instagram</a>
+                        <a href="#" class="contact-social">VK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container container--content">
+            <div class="footer__bottom">
+                <span class="footer__copy" data-i18n="footer.copy">© 2026 Annosemp. Все права защищены.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/translations.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

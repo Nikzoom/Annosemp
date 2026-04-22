@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="О бренде Annosemp — модульная одежда будущего. Наша миссия и видение.">
+    <title>О бренде — Annosemp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+    <div class="page-transition"></div>
+
+    <header class="header scrolled" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">Annosemp<span>.</span></a>
+            <nav class="header__nav">
+                <a href="index.html" data-i18n="nav.home">Главная</a>
+                <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+                <a href="about.html" class="active" data-i18n="nav.about">О бренде</a>
+                <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+            </nav>
+            <div class="header__actions">
+                <div class="lang-switch">
+                    <button class="lang-switch__btn active" data-lang="ru">RU</button>
+                    <span class="lang-switch__divider">/</span>
+                    <button class="lang-switch__btn" data-lang="en">EN</button>
+                </div>
+                <div class="header__cart" id="cart-toggle">
+                    <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+                    <span class="header__cart-count" id="cart-count">0</span>
+                    <div class="mini-cart" id="mini-cart">
+                        <div class="mini-cart__header">
+                            <span class="mini-cart__title" data-i18n="cart.miniTitle">Корзина</span>
+                            <a href="cart.html" class="text-gold" style="font-size:var(--fs-xs);">→</a>
+                        </div>
+                        <div class="mini-cart__items" id="mini-cart-items"></div>
+                        <div class="mini-cart__empty" id="mini-cart-empty" data-i18n="cart.empty">Ваша корзина пуста</div>
+                        <div class="mini-cart__footer" id="mini-cart-footer" style="display:none;">
+                            <div class="mini-cart__total"><span data-i18n="cart.total">Итого</span><span id="mini-cart-total">0 ₽</span></div>
+                            <a href="cart.html" class="btn btn--primary btn--full btn--sm" data-i18n="cart.checkout">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger" id="burger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+        <a href="about.html" data-i18n="nav.about">О бренде</a>
+        <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+    </nav>
+
+    <main class="page-content">
+        <!-- About Hero -->
+        <section class="about-hero">
+            <div class="about-hero__bg">
+                <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1600&q=80" alt="Annosemp About">
+            </div>
+            <div class="about-hero__overlay"></div>
+            <div class="about-hero__content">
+                <span class="section-subtitle" style="color:var(--gold);" data-i18n="about.subtitle">О бренде</span>
+                <h1 class="about-hero__title" data-i18n="about.title">Annosemp</h1>
+            </div>
+        </section>
+
+        <!-- Philosophy -->
+        <section class="section">
+            <div class="container container--content">
+                <div class="about-split grid-2" style="align-items:center;gap:var(--space-4xl);">
+                    <div class="reveal">
+                        <span class="section-subtitle" data-i18n="philosophy.subtitle">Философия</span>
+                        <h2 class="section-title">ANNO + SEMP</h2>
+                        <div class="divider"></div>
+                        <p style="margin-bottom:var(--space-md);font-size:var(--fs-md);line-height:1.8;" data-i18n="philosophy.anno">ANNO (год) — олицетворяет время, циклы, моменты, историю.</p>
+                        <p style="font-size:var(--fs-md);line-height:1.8;" data-i18n="philosophy.semp">SEMP (всегда) — олицетворяет постоянство, вечность, неизменность, наследие.</p>
+                    </div>
+                    <div class="about-split__image reveal reveal-delay-2">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80" alt="Annosemp Philosophy" style="width:100%;height:500px;object-fit:cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote -->
+        <section class="section section--dark">
+            <div class="container container--content text-center">
+                <blockquote class="about-quote reveal">
+                    <p data-i18n="philosophy.quote" style="font-family:var(--font-accent);font-size:var(--fs-2xl);font-style:italic;color:var(--white);line-height:1.4;max-width:800px;margin:0 auto;">«Annosemp — это диалог между мгновением и вечностью. Между тем, что меняется, и тем, что остаётся неизменным.»</p>
+                </blockquote>
+                <div class="divider divider--center" style="margin-top:var(--space-2xl);"></div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="section">
+            <div class="container container--content">
+                <div class="grid-2" style="gap:var(--space-4xl);">
+                    <div class="about-block reveal">
+                        <span class="section-subtitle" data-i18n="about.mission.title">Наша миссия</span>
+                        <div class="divider"></div>
+                        <p style="font-size:var(--fs-md);line-height:1.9;" data-i18n="about.mission.text">Обеспечить разработку и внедрение модульной системы умной одежды, направленной на повышение функциональности, комфорта и доступности повседневной одежды за счёт интеграции современных технологий, а также снижение экологической нагрузки посредством продления жизненного цикла изделий.</p>
+                    </div>
+                    <div class="about-block reveal reveal-delay-2">
+                        <span class="section-subtitle" data-i18n="about.vision.title">Наше видение</span>
+                        <div class="divider"></div>
+                        <p style="font-size:var(--fs-md);line-height:1.9;" data-i18n="about.vision.text">Сформировать устойчивую позицию на рынке инновационной одежды, став одним из лидеров в сегменте модульных технологических решений, обеспечивающих персонализацию, энергоэффективность и адаптивность продукции.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="section section--cream">
+            <div class="container container--content text-center">
+                <span class="section-subtitle reveal">Roadmap</span>
+                <h2 class="section-title reveal reveal-delay-1">Ключевые этапы</h2>
+                <div class="timeline">
+                    <div class="timeline__item reveal">
+                        <div class="timeline__date">01.02.2026</div>
+                        <div class="timeline__text">Завершение дизайна и технических спецификаций</div>
+                    </div>
+                    <div class="timeline__item reveal reveal-delay-1">
+                        <div class="timeline__date">01.03.2026</div>
+                        <div class="timeline__text">Готовность рабочего прототипа приложения и всех модулей</div>
+                    </div>
+                    <div class="timeline__item reveal reveal-delay-2">
+                        <div class="timeline__date">01.04.2026</div>
+                        <div class="timeline__text">Начало производства пилотной партии</div>
+                    </div>
+                    <div class="timeline__item reveal reveal-delay-3">
+                        <div class="timeline__date">01.05.2026</div>
+                        <div class="timeline__text">Старт предварительных продаж и маркетинговой кампании</div>
+                    </div>
+                    <div class="timeline__item reveal reveal-delay-4">
+                        <div class="timeline__date">01.06.2026</div>
+                        <div class="timeline__text">Официальный релиз и отгрузка первых заказов</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section--dark text-center">
+            <div class="container">
+                <h2 class="section-title reveal" data-i18n="cta.title">Будьте первыми</h2>
+                <p class="section-desc section-desc--centered reveal reveal-delay-1" data-i18n="cta.text" style="color:var(--gray-300);">Запуск пилотной партии — июнь 2026.</p>
+                <div class="divider divider--center reveal reveal-delay-1"></div>
+                <a href="contact.html" class="btn btn--gold btn--lg reveal reveal-delay-2" data-i18n="cta.btn">Оформить предзаказ</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container--content">
+            <div class="footer__bottom">
+                <span class="footer__copy" data-i18n="footer.copy">© 2026 Annosemp. Все права защищены.</span>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.198 2.433a2.242 2.242 0 00-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 01-2.849 1.09c-.42.147-.99.332-1.473.901-.728.855.075 1.644.357 1.882l4.146 2.987.283 4.59c.063.497.264.94.69 1.12.426.179.81.03 1.09-.151l2.479-1.59 3.397 2.686c.39.282.81.424 1.254.424.54 0 .943-.285 1.176-.57.233-.285.381-.632.453-.995 0-.002 3.478-16.476 3.478-16.476.187-.727.137-1.373-.19-1.873-.33-.502-.844-.733-1.136-.804z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/translations.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

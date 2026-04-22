@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Annosemp — модульная одежда будущего. Диалог между мгновением и вечностью.">
+    <title>Annosemp — Модульная одежда будущего</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader__brand">Annosemp</div>
+    </div>
+
+    <!-- Page Transition -->
+    <div class="page-transition"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">Annosemp<span>.</span></a>
+            <nav class="header__nav">
+                <a href="index.html" class="active" data-i18n="nav.home">Главная</a>
+                <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+                <a href="about.html" data-i18n="nav.about">О бренде</a>
+                <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+            </nav>
+            <div class="header__actions">
+                <div class="lang-switch">
+                    <button class="lang-switch__btn active" data-lang="ru">RU</button>
+                    <span class="lang-switch__divider">/</span>
+                    <button class="lang-switch__btn" data-lang="en">EN</button>
+                </div>
+                <div class="header__cart" id="cart-toggle">
+                    <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+                    <span class="header__cart-count" id="cart-count">0</span>
+                    <!-- Mini Cart -->
+                    <div class="mini-cart" id="mini-cart">
+                        <div class="mini-cart__header">
+                            <span class="mini-cart__title" data-i18n="cart.miniTitle">Корзина</span>
+                            <a href="cart.html" class="text-gold" style="font-size:var(--fs-xs);" data-i18n="cart.title">Корзина</a>
+                        </div>
+                        <div class="mini-cart__items" id="mini-cart-items"></div>
+                        <div class="mini-cart__empty" id="mini-cart-empty" data-i18n="cart.empty">Ваша корзина пуста</div>
+                        <div class="mini-cart__footer" id="mini-cart-footer" style="display:none;">
+                            <div class="mini-cart__total">
+                                <span data-i18n="cart.total">Итого</span>
+                                <span id="mini-cart-total">0 ₽</span>
+                            </div>
+                            <a href="cart.html" class="btn btn--primary btn--full btn--sm" data-i18n="cart.checkout">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger" id="burger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+        <a href="about.html" data-i18n="nav.about">О бренде</a>
+        <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+        <div class="lang-switch" style="margin-top:2rem;">
+            <button class="lang-switch__btn active" data-lang="ru">RU</button>
+            <span class="lang-switch__divider">/</span>
+            <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=1600&q=80" alt="Annosemp Hero">
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__label" data-i18n="hero.label">Модульная одежда будущего</p>
+            <h1 class="hero__title" data-i18n="hero.title">Annosemp.</h1>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">Диалог между мгновением и вечностью. Вечная классика, переплетающаяся с ритмом жизни.</p>
+            <div class="hero__actions">
+                <a href="catalog.html" class="btn btn--outline-white btn--lg" data-i18n="hero.cta">Смотреть коллекцию</a>
+                <a href="about.html" class="btn btn--gold btn--lg" data-i18n="hero.cta2">О бренде</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span data-i18n="hero.scroll">Листайте вниз</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee__track">
+            <span class="marquee__item">Modularity<span>◆</span></span>
+            <span class="marquee__item">Innovation<span>◆</span></span>
+            <span class="marquee__item">Sustainability<span>◆</span></span>
+            <span class="marquee__item">Technology<span>◆</span></span>
+            <span class="marquee__item">Heritage<span>◆</span></span>
+            <span class="marquee__item">Modularity<span>◆</span></span>
+            <span class="marquee__item">Innovation<span>◆</span></span>
+            <span class="marquee__item">Sustainability<span>◆</span></span>
+            <span class="marquee__item">Technology<span>◆</span></span>
+            <span class="marquee__item">Heritage<span>◆</span></span>
+        </div>
+    </div>
+
+    <!-- Philosophy Section -->
+    <section class="section" id="philosophy">
+        <div class="container container--content">
+            <div class="grid-2" style="align-items:center;gap:var(--space-4xl);">
+                <div class="reveal">
+                    <span class="section-subtitle" data-i18n="philosophy.subtitle">Философия</span>
+                    <h2 class="section-title" data-i18n="philosophy.title">ANNO + SEMP</h2>
+                    <div class="divider"></div>
+                    <p style="margin-bottom:var(--space-md);" data-i18n="philosophy.anno">ANNO (год) — олицетворяет время, циклы, моменты, историю.</p>
+                    <p data-i18n="philosophy.semp">SEMP (всегда) — олицетворяет постоянство, вечность, неизменность, наследие.</p>
+                </div>
+                <div class="reveal reveal-delay-2" style="position:relative;">
+                    <blockquote style="font-family:var(--font-accent);font-size:var(--fs-xl);font-style:italic;color:var(--gray-700);line-height:1.5;padding-left:var(--space-xl);border-left:2px solid var(--gold);">
+                        <p data-i18n="philosophy.quote" style="color:var(--gray-700);">«Annosemp — это диалог между мгновением и вечностью. Между тем, что меняется, и тем, что остаётся неизменным.»</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section--dark" id="features">
+        <div class="container container--content">
+            <div class="text-center" style="margin-bottom:var(--space-4xl);">
+                <span class="section-subtitle reveal" data-i18n="features.subtitle">Преимущества</span>
+                <h2 class="section-title reveal reveal-delay-1" data-i18n="features.title">Технологии в каждой детали</h2>
+            </div>
+            <div class="grid-4">
+                <div class="feature-card reveal" style="border-color:var(--gray-700);">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h4 class="feature-card__title" style="color:var(--white);" data-i18n="features.modular.title">Модульность 3-в-1</h4>
+                    <p class="feature-card__text" data-i18n="features.modular.text">Одна куртка заменяет демисезонную, зимнюю и ветровку. Сменные модули для любой погоды.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-1" style="border-color:var(--gray-700);">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 015 5c0 2.76-5 9-5 9s-5-6.24-5-9a5 5 0 015-5z"/><circle cx="12" cy="7" r="1.5"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h4 class="feature-card__title" style="color:var(--white);" data-i18n="features.heat.title">Подогрев спины</h4>
+                    <p class="feature-card__text" data-i18n="features.heat.text">Программируемый подогрев спины с автономной работой до 8 часов.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2" style="border-color:var(--gray-700);">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </div>
+                    <h4 class="feature-card__title" style="color:var(--white);" data-i18n="features.led.title">LED-подсветка</h4>
+                    <p class="feature-card__text" data-i18n="features.led.text">Программируемая светодиодная подсветка для безопасности и стиля.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-3" style="border-color:var(--gray-700);">
+                    <div class="feature-card__icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 12l2 2 4-4"/></svg>
+                    </div>
+                    <h4 class="feature-card__title" style="color:var(--white);" data-i18n="features.eco.title">Экологичность</h4>
+                    <p class="feature-card__text" data-i18n="features.eco.text">Модульность продлевает жизненный цикл изделия, снижая экологическую нагрузку.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="section" id="collection">
+        <div class="container container--content">
+            <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:var(--space-3xl);">
+                <div>
+                    <span class="section-subtitle reveal" data-i18n="collection.subtitle">Коллекция</span>
+                    <h2 class="section-title reveal reveal-delay-1" data-i18n="collection.title">Избранное</h2>
+                </div>
+                <a href="catalog.html" class="btn btn--outline btn--sm reveal" data-i18n="collection.cta">Смотреть все</a>
+            </div>
+            <div class="grid-4" id="featured-products">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--dark" style="position:relative;overflow:hidden;">
+        <div class="container container--content text-center" style="position:relative;z-index:2;">
+            <span class="section-subtitle reveal" data-i18n="cta.subtitle">Предзаказ</span>
+            <h2 class="section-title reveal reveal-delay-1" data-i18n="cta.title" style="max-width:600px;margin:0 auto var(--space-lg);">Будьте первыми</h2>
+            <p class="section-desc section-desc--centered reveal reveal-delay-2" data-i18n="cta.text">Запуск пилотной партии — июнь 2026. Оформите предзаказ и получите персональную скидку.</p>
+            <div class="divider divider--center reveal reveal-delay-2"></div>
+            <a href="contact.html" class="btn btn--gold btn--lg reveal reveal-delay-3" data-i18n="cta.btn">Оформить предзаказ</a>
+        </div>
+        <div style="position:absolute;top:50%;left:50%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(201,169,110,0.06) 0%,transparent 70%);transform:translate(-50%,-50%);pointer-events:none;"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container container--content">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand">Annosemp<span style="color:var(--gold);">.</span></div>
+                    <p class="footer__desc" data-i18n="footer.desc">Вечная классика, переплетающаяся с ритмом нашей жизни. Модульная одежда нового поколения.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading" data-i18n="footer.nav">Навигация</h4>
+                    <div class="footer__links">
+                        <a href="index.html" data-i18n="nav.home">Главная</a>
+                        <a href="catalog.html" data-i18n="nav.catalog">Каталог</a>
+                        <a href="about.html" data-i18n="nav.about">О бренде</a>
+                        <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__heading" data-i18n="footer.info">Информация</h4>
+                    <div class="footer__links">
+                        <a href="#" data-i18n="footer.info.delivery">Доставка</a>
+                        <a href="#" data-i18n="footer.info.returns">Возврат</a>
+                        <a href="#" data-i18n="footer.info.privacy">Конфиденциальность</a>
+                        <a href="#" data-i18n="footer.info.terms">Условия</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__heading" data-i18n="footer.newsletter">Рассылка</h4>
+                    <p class="footer__desc" style="margin-bottom:var(--space-md);" data-i18n="footer.newsletter.text">Подпишитесь на новости о запуске коллекции.</p>
+                    <div class="footer__newsletter-input">
+                        <input type="email" data-i18n="footer.newsletter.placeholder" placeholder="Ваш email">
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copy" data-i18n="footer.copy">© 2026 Annosemp. Все права защищены.</span>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.198 2.433a2.242 2.242 0 00-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 01-2.849 1.09c-.42.147-.99.332-1.473.901-.728.855.075 1.644.357 1.882l4.146 2.987.283 4.59c.063.497.264.94.69 1.12.426.179.81.03 1.09-.151l2.479-1.59 3.397 2.686c.39.282.81.424 1.254.424.54 0 .943-.285 1.176-.57.233-.285.381-.632.453-.995 0-.002 3.478-16.476 3.478-16.476.187-.727.137-1.373-.19-1.873-.33-.502-.844-.733-1.136-.804z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+                    <a href="#" aria-label="VK"><svg viewBox="0 0 24 24"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.596-.19 1.364 1.259 2.178 1.815.616.42 1.084.328 1.084.328l2.175-.03s1.14-.07.599-.964c-.044-.073-.314-.661-1.618-1.869-1.366-1.265-1.183-1.06.462-3.246.998-1.328 1.397-2.14 1.273-2.487-.12-.332-.853-.244-.853-.244l-2.445.015s-.181-.025-.316.056c-.131.079-.216.263-.216.263s-.387 1.03-.904 1.907c-1.088 1.848-1.524 1.946-1.702 1.832-.414-.265-.31-1.065-.31-1.634 0-1.775.269-2.515-.524-2.706-.263-.063-.456-.105-1.128-.112-.861-.009-1.59.003-2.004.205-.276.135-.488.434-.359.451.16.02.52.097.711.357.247.335.238 1.089.238 1.089s.142 2.09-.331 2.349c-.325.178-.77-.185-1.725-1.845-.49-.85-.86-1.79-.86-1.79s-.071-.175-.198-.268c-.154-.113-.37-.149-.37-.149l-2.324.015s-.349.01-.477.161c-.114.135-.009.414-.009.414s1.82 4.258 3.878 6.404c1.887 1.967 4.03 1.838 4.03 1.838h.972z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
